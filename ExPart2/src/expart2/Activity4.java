@@ -10,17 +10,20 @@ public class Activity4 {
 		Scanner keyboard= new Scanner (System.in);
 	
 		// declare variables
-		int x, y;
+		int x, y, aux;
 		
 		// enter values
-		System.out.print("Enter value for x ");
+		System.out.print("Enter value for x: ");
 		x = keyboard.nextInt();
-		System.out.print("Enter value for y ");
+		System.out.print("Enter value for y: ");
 		y = keyboard.nextInt();
 		
 		// code attempting to swap two variables
+		
+		aux= x;
 		x = y;
-		y = x;
+		y = aux;
+		
 		//display results
 		System.out.println("x = " + x);
 		System.out.println("y = " + y);
@@ -28,10 +31,11 @@ public class Activity4 {
 		//close scanner
 		keyboard.close();
 		
-		/*a. Can you see why the program doesn’t do what we hoped? No
-		b. What would be the actual output of the program? 
+		/*a. Can you see why the program doesn’t do what we hoped? Yes
+		b. What would be the actual output of the program? x=y, y=y 
 		c. How could you modify the program above so that the values of the two variables are 
-		swapped successfully?*/
+		swapped successfully? You have to create an additional variable so the value of y wont be owerwritten
+		with the value of x */
 
 
 	}
