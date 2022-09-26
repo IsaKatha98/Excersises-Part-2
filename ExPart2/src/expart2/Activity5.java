@@ -18,7 +18,7 @@ public static void main (String[] args) {
 	//enter values
 		System.out.print("Enter height of the rectangle: ");
 		height= keyboard.nextDouble();
-		System.out.print("Enter legth of the rectangle: ");
+		System.out.print("Enter length of the rectangle: ");
 		length= keyboard.nextDouble();
 		
 	//calculations
